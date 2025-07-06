@@ -50,50 +50,12 @@ Built with modern web technologies including **Next.js**, **Solidity (Ethereum)*
 
 ---
 
-## 🔧 Setup Instructions
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/your-username/iot-blockchain-evoting.git
-   cd iot-blockchain-evoting
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   cd client && npm install     # Next.js app
-   cd ../server && npm install  # WebAuthn server
-   cd ../blockchain && npm install  # Smart contracts
-   ```
-
-3. **Compile & Deploy Smart Contracts**
-   ```bash
-   npx hardhat compile
-   npx hardhat deploy --network zkSyncTestnet
-   ```
-
-4. **Run Backend**
-   ```bash
-   cd server
-   node app.js
-   ```
-
-5. **Run Frontend**
-   ```bash
-   cd client
-   npm run dev
-   ```
-
----
-
-## 📸 Screenshots
-
-> *(Add screenshots of your frontend and fingerprint auth here)*
 
 ---
 
 ## 🛡️ Security & Privacy
 
-- No biometric data (fingerprint) is stored on the server or blockchain.
+- No biometric data (fingerprint) is stored on the server.
 - All authentication is handled via WebAuthn public-key cryptography.
 - Blockchain ensures transparency, traceability, and immutability of votes.
 
@@ -106,18 +68,3 @@ Built with modern web technologies including **Next.js**, **Solidity (Ethereum)*
 
 ---
 
-## 🔗 Live Demo
-
-> *(Optional – if hosted somewhere, add the link)*
-
----
-
-## 📝 License
-
-MIT License
-
----
-
-## 👨‍💻 Author
-
-**Muhammad Talha**
