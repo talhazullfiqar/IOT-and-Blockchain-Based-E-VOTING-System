@@ -30,29 +30,6 @@ Built with modern web technologies including **Next.js**, **Solidity (Ethereum)*
 
 ---
 
-## 📂 Project Structure
-
-```
-root/
-│
-├── client/                 # Frontend - Next.js App
-│   ├── pages/
-│   ├── components/
-│   └── styles/
-│
-├── server/                 # WebAuthn + Fingerprint backend
-│   ├── routes/
-│   ├── utils/
-│   └── app.js
-│
-├── blockchain/             # Smart Contracts in Solidity
-│   ├── contracts/
-│   ├── scripts/
-│   ├── test/
-│   └── hardhat.config.js
-│
-└── README.md
-```
 
 ---
 
