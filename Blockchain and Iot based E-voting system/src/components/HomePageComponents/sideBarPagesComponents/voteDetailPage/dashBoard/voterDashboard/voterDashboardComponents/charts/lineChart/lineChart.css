@@ -1,0 +1,19 @@
+.lineChartContainer {
+  display: inline-block;
+  animation: FadinRight 1.5s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lineChartContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+@keyframes FadinRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

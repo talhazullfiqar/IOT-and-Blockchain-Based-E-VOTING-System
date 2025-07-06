@@ -1,0 +1,74 @@
+/* CalendarComponent.module.css */
+
+.calendarContainer {
+  position: relative;
+  margin: 30px 10px;
+  width: 35rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendarInput {
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 35rem;
+  background-color: white;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.calendarInput:hover {
+  border: 2px solid rgb(209, 74, 236, 0.5);
+  box-shadow: 0px 0px 0px 4px rgb(209, 74, 236, 0.2);
+  background-color: white;
+}
+
+.calendarInput:focus {
+  border: 2px solid rgb(209, 74, 236, 1);
+  box-shadow: 0px 0px 0px 8px rgba(209, 74, 236, 0.2);
+  background-color: white;
+}
+
+.calendarTooltipContent {
+  background-color: #4b5563;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+  z-index: 10;
+}
+
+.calendarTooltipText {
+  color: white;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.calendarTooltipArrow {
+  background-color: inherit;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.invalid .calendarInput {
+  border: 1px solid red;
+  border: 2px solid rgb(236, 74, 98);
+  box-shadow: 0px 0px 0px 8px rgba(236, 74, 74, 0.2);
+}
+
+.calendarErrorText {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

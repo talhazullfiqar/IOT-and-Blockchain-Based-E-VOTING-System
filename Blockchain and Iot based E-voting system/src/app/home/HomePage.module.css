@@ -1,0 +1,48 @@
+.homePageContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.8fr 1fr;
+  align-items: center;
+  text-align: start;
+}
+.homePageSVGContainer {
+  width: 550px;
+  opacity: 0;
+  animation: fadeIn 4s ease-out forwards, float 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.homePageText {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline #37474f 8px;
+  color: #ba68c8;
+  animation: fadeInTop 2s ease-out;
+}
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

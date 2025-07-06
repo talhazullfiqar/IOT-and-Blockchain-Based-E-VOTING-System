@@ -1,0 +1,60 @@
+.partyRegistrationHeader {
+  background-color: rgba(211, 211, 211, 0.381);
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.partyRegistration-container {
+  width: 1200px;
+  min-height: 600px;
+  margin: 20px auto;
+  text-align: center;
+  background: rgba(192, 191, 191, 0.225);
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.279);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  animation: fadeIn-top 1s ease-in-out;
+}
+@keyframes fadeIn-top {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.partyRegisterbutton {
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.partyRegisterbutton.registerParty {
+  background-color: rgb(209, 74, 236, 1);
+}
+
+.partyRegisterbutton.registerParty:hover {
+  background-color: rgb(140, 50, 158);
+}
+
+.partyRegisterbutton.registerParty:active {
+  background-color: rgb(79, 28, 90);
+  transform: scale(0.95);
+}

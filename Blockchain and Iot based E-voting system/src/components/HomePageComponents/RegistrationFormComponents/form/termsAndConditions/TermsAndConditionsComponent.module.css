@@ -1,0 +1,65 @@
+.termsCard {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customBlockuiOverlay {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.customPanelHeader {
+  color: white;
+  font-weight: bold;
+}
+
+.customPanelContent {
+  padding: 1rem;
+}
+
+.customButton {
+  background-color: #a690cf;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customButton:hover {
+  background-color: #8e77ba;
+  cursor: pointer;
+}
+
+.customButton:active {
+  background-color: #8365b5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+}
+
+.customButton:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+.mt20 {
+  margin-top: 2rem;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customHeading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

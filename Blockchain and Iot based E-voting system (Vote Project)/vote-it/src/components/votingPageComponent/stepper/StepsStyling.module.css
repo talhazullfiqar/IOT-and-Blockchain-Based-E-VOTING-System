@@ -1,0 +1,29 @@
+.CandidateHeader {
+  font-size: 1.3rem;
+  background-color: rgba(192, 223, 233, 0.515);
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 350px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn-Up 1s ease-in;
+}
+@keyframes fadeIn-Up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.CandidateCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}

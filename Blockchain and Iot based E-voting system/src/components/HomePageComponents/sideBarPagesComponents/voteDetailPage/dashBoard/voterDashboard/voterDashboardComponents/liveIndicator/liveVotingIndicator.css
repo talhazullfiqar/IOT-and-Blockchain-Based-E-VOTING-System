@@ -1,0 +1,126 @@
+.live-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.live-heading {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.live-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.live-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --animation: 2s ease-in-out infinite;
+}
+
+.live-loader .live-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: solid 2px transparent;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: transparent;
+  animation: circle-keys var(--animation);
+}
+
+.live-loader .live-circle .live-dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  animation: dot-keys var(--animation);
+}
+
+.live-loader .live-circle .live-outline {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: outline-keys var(--animation);
+}
+
+/* Red loader styles */
+.live-loader .live-circle.live-red {
+  --color: #ea4335; /* Red */
+  border-color: var(--color);
+}
+
+.live-loader .live-circle.live-red .live-dot {
+  background-color: var(--color);
+}
+
+.live-loader .live-circle.live-red .live-outline {
+  animation-delay: 0.3s;
+}
+
+@keyframes circle-keys {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-keys {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outline-keys {
+  0% {
+    transform: scale(0);
+    outline: solid 20px var(--color);
+    outline-offset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    outline: solid 0 transparent;
+    outline-offset: 20px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,66 @@
+/* components/Toast.module.css */
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 233, 233, 0.622);
+  color: #f52323;
+  border: 1px solid rgba(245, 198, 203, 0.786);
+  border-radius: 8px;
+  padding: 10px 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000000000;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+  backdrop-filter: blur(10px);
+}
+
+.toast::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px; /* Red bar width */
+  height: 100%;
+  background-color: #f52323; /* Red color bar */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.toast.error {
+  background: rgba(255, 233, 233, 0.8);
+  color: #f52323;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.close {
+  margin-top: -30px;
+  margin-right: -10px;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}

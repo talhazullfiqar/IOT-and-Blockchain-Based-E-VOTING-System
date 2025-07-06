@@ -1,0 +1,142 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.addYear {
+  color: white;
+  background-color: rgb(214, 0, 214);
+  padding: 0.9rem;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.addYear:active {
+  background-color: purple;
+  scale: 0.9;
+}
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #cf47cf;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.secondaryTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #333;
+  text-align: center;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.inputGroup {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.label {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  display: block;
+  color: #555;
+}
+
+.input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.input:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+  outline: none;
+}
+
+.timeInputs {
+  margin-top: 20px;
+}
+
+.timeSection {
+  margin-bottom: 35px;
+}
+
+.timeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.timeGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 140px;
+}
+
+.statusControl {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.setTime {
+  background-color: #0070f3;
+  color: white;
+}
+
+.setTime:hover {
+  background-color: #0051c6;
+  transform: translateY(-2px);
+}
+
+.status {
+  margin-top: 20px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  border-left: 4px solid #0070f3;
+}

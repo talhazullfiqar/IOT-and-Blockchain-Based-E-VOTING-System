@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 1255px;
+  min-height: 400px;
+  max-height: 400px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.table-wrapper {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable scrolling for the list */
+  overflow-x: auto;
+  margin-top: 10px;
+  max-height: 320px; /* Adjust to fit within the .card */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.sortable span {
+  display: flex;
+}
+
+.sortable:hover {
+  color: #f700ff;
+}
+
+.row:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.icon-inactive {
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.icon-active {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #voterList,
+  #voterList * {
+    visibility: visible;
+  }
+  #voterList {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.print-btn {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.print-btn:hover {
+  background-color: #45a049;
+}
+.footerContainer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: right;
+}
+.footer {
+  background-color: #a045a027;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: row;
+}

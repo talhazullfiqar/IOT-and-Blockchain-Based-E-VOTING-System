@@ -1,0 +1,160 @@
+.CandidateCardInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  animation: fadin-Down 1s ease-in;
+}
+@keyframes fadin-Down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.CandidateCardInput:checked + .CardTile {
+  border-color: rgb(209, 74, 236, 1);
+  box-shadow: 0 8px 15px rgba(209, 74, 236, 0.2);
+  color: rgb(209, 74, 236, 1);
+}
+
+.CandidateCardInput:checked + .CardTile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: rgb(209, 74, 236, 1);
+  border-color: rgb(209, 74, 236, 1);
+}
+
+.CandidateCardInput:checked + .CardTile .radioIcon {
+  fill: rgb(209, 74, 236, 1);
+}
+
+.CandidateCardInput:checked + .CardTile .radioLabel {
+  color: rgb(209, 74, 236, 1);
+}
+
+.CandidateCardInput:focus + .CardTile {
+  border-color: rgb(209, 74, 236, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 0 0 0 4px rgb(209, 74, 236, 0.4);
+}
+
+.CandidateCardInput:focus + .CardTile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.CardTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  min-height: 160px;
+  border-radius: 12px;
+  border: 2px solid #d1d8e0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  padding: 25px;
+  overflow: hidden;
+  transform: scale(1);
+  box-sizing: border-box;
+  background-color: #f1f6f9;
+}
+
+.CardTile:hover {
+  transform: scale(1.05);
+  border-color: rgb(209, 74, 236, 1);
+  box-shadow: 0 15px 30px rgba(209, 74, 236, 0.2);
+}
+
+.CardTile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.CardTile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.CandidateCardInput {
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.CandidateCardInput:focus + .CardTile {
+  border-color: rgb(209, 74, 236, 1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px rgb(209, 74, 236, 0.4);
+}
+
+.CardTile > .radioIcon {
+  margin-bottom: 10px;
+}
+
+.CandidateProfileCard {
+  margin-bottom: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 6%;
+}
+.CandidateProfileCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.candidateName {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.partyDetails {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(98, 196, 209, 0.2);
+  padding: 10px 20px;
+  border-radius: 7px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.partyDetails:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.partyName {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.partySign {
+  height: auto;
+  border-radius: 5px;
+  margin-left: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.partySign:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,68 @@
+.userRegisteredPannelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.userRegisteredMessageContainer {
+  margin-top: 100px;
+  margin-left: 50px;
+  animation: FadeInTop 1s ease-in forwards;
+}
+@keyframes FadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.userRegisteredPannelCard {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  padding: 25px 40px;
+  border: 2px solid #e9e9e9;
+  border-radius: 10px;
+  background-color: #ffffff60;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: FadeIn 0.8s ease-in forwards;
+}
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.userRegisteredICON {
+  color: rgb(205, 28, 28);
+  font-size: 4rem;
+}
+.userRegisteredHeading {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  align-items: center;
+}
+.userRegisteredHeadingText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  padding-left: 5px;
+}
+.userRegisteredSVG {
+  animation: FadeInLeft 1s ease-in forwards;
+}
+@keyframes FadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

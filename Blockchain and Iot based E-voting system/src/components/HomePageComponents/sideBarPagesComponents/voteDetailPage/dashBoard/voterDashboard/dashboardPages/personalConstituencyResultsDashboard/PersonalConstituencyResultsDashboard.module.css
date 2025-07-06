@@ -1,0 +1,42 @@
+.totalCountsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.totalCountsContainer > * {
+  margin-right: 45px;
+}
+.votingYearContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 7px;
+  width: 350px;
+  background-color: #c35ddc36;
+  animation: fadeinDown 1.5s ease-in-out;
+}
+@keyframes fadeinDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.votingYearIcon {
+  font-size: 2rem;
+}
+.votingYearMessage {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}

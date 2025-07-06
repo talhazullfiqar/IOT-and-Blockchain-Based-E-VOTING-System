@@ -1,0 +1,70 @@
+.walletButton {
+  font-family: inherit;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 0.7em 1em;
+  margin-top: 3%;
+  margin-left: 42%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.walletButton span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.walletButton svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.walletButton:hover {
+  background: transparent;
+}
+
+.walletButton:hover .svg-wrapper {
+  transform: scale(1.25);
+  transition: 0.3s linear;
+}
+
+.walletButton:hover svg {
+  transform: translateX(2.8em) scale(1.1);
+  fill: #fff;
+}
+
+.walletButton:hover span {
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.walletButton:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 860px) {
+  .walletButton {
+    font-family: inherit;
+    font-size: 20px;
+    background: whitesmoke;
+    color: black;
+    padding: 0.7em 1em;
+    margin-top: 3%;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

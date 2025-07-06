@@ -1,0 +1,139 @@
+.container {
+  max-width: 1255px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadein-Down 1s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@keyframes fadein-Down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ethHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ethIcon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #6272a4;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.statusRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.statusItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ebebeb93;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.statusItem:hover {
+  background-color: #eef6ff;
+  transform: scale(1.05);
+}
+
+.iconWithLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  color: #696969;
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.active {
+  background-color: #00d084;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555555;
+}
+
+.value {
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.progress {
+  flex: 1;
+  border-radius: 10px;
+  height: 8px;
+  background: #00d084;
+  transition: width 0.5s ease;
+}

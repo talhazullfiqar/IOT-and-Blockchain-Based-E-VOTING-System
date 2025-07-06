@@ -1,0 +1,105 @@
+.genderRadioInputs {
+  display: flex;
+  margin-left: 10rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.genderRadioInputs > * {
+  margin: 16px;
+}
+
+.genderRadioInput:checked + .radioTile {
+  border-color: rgb(209, 74, 236, 1);
+  box-shadow: 0 5px 10px rgb(209, 74, 236, 0.1);
+  color: rgb(209, 74, 236, 1);
+}
+
+.genderRadioInput:checked + .radioTile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: rgb(209, 74, 236, 1);
+  border-color: rgb(209, 74, 236, 1);
+}
+
+.genderRadioInput:checked + .radioTile .radioIcon {
+  fill: rgb(209, 74, 236, 1);
+}
+
+.genderRadioInput:checked + .radioTile .radioLabel {
+  color: rgb(209, 74, 236, 1);
+}
+
+.genderRadioInput:focus + .radioTile {
+  border-color: rgb(209, 74, 236, 1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px rgb(209, 74, 236, 0.4);
+}
+
+.genderRadioInput:focus + .radioTile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radioTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  min-height: 80px;
+  border-radius: 0.5rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgb(209, 74, 236, 0.1);
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.radioTile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+}
+
+.radioTile:hover {
+  border-color: rgb(209, 74, 236, 1);
+}
+
+.radioTile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radioIcon {
+  width: 2rem;
+  height: 2rem;
+  fill: #494949;
+}
+
+.radioLabel {
+  color: #707070;
+  transition: 0.375s ease;
+  text-align: center;
+  font-size: 13px;
+}
+
+.genderRadioInput {
+  clip-path: inset(100%);
+  overflow: hidden;
+}

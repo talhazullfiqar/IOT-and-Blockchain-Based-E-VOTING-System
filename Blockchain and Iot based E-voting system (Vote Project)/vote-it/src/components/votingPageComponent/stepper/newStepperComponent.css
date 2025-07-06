@@ -1,0 +1,147 @@
+.stepper-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 15px auto;
+  text-align: center;
+  background: rgba(192, 191, 191, 0.225);
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.279);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  animation: fadeIn-left 1s ease-in-out;
+}
+
+@keyframes fadeIn-left {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.step-indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step-indicator.active {
+  background-color: #000000;
+  color: #fff;
+}
+
+.step-indicator.inactive {
+  background-color: #e6e6e6;
+  color: #aaa;
+}
+
+.step-label {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.step-label.active {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.step-label.inactive {
+  color: #aaa;
+}
+
+.connector-line {
+  position: absolute;
+  top: 50%;
+  left: 130px;
+  right: 130px;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 0;
+  transition: background-color 0.3s ease;
+}
+
+.connector-line.active {
+  background-color: #000000;
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Spacing between the text and icon */
+}
+
+.button-content svg {
+  font-size: 20px; /* Icon size */
+}
+
+.button.back {
+  background-color: #000000;
+}
+
+.button.back:hover {
+  background-color: #b3b3b3;
+}
+
+.button.back:active {
+  background-color: #999;
+  transform: scale(0.95);
+}
+
+.button.next {
+  background-color: rgb(209, 74, 236, 1);
+}
+
+.button.next:hover {
+  background-color: rgb(140, 50, 158);
+}
+
+.button.next:active {
+  background-color: rgb(79, 28, 90);
+  transform: scale(0.95);
+}

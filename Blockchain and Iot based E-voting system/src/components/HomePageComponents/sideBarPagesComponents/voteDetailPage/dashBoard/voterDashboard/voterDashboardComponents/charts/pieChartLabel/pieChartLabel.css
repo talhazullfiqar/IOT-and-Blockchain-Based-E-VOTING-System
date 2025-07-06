@@ -1,0 +1,22 @@
+.pieChartLabelContainer {
+  width: 450px;
+  margin-left: 65px;
+  display: inline-block;
+  animation: FadinBottom 1.5s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pieChartLabelContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes FadinBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

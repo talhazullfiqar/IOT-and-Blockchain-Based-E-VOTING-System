@@ -1,0 +1,32 @@
+.admindashBoardContainer {
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+  padding-top: 30px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.admindashBoardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.admindashBoardHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.tabbarWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.LiveVotingIndicator {
+  position: absolute;
+  right: 20px;
+}

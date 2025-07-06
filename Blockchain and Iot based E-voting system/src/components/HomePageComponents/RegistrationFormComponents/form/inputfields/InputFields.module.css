@@ -1,0 +1,86 @@
+.userInputContainer {
+  position: relative;
+  margin: 30px 10px;
+  width: 200px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.userInputContainer .userInput {
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 35rem;
+  background-color: whitesmoke;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.userInputContainer .userInput:hover {
+  border: 2px solid rgb(209, 74, 236, 0.5);
+  box-shadow: 0px 0px 0px 4px rgb(209, 74, 236, 0.2);
+  background-color: white;
+}
+
+.userInputContainer .userInput:hover ~ .tooltipContent {
+  display: block;
+}
+
+.userInputContainer .label {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.userInputContainer .userInput:focus ~ .label,
+.userInputContainer .userInput:valid ~ .label {
+  top: -22px;
+  font-size: 12px;
+  color: #474747;
+}
+
+.userInputContainer .userInput:focus {
+  border: 2px solid rgb(209, 74, 236, 1);
+  box-shadow: 0px 0px 0px 8px rgba(209, 74, 236, 0.2);
+  background-color: white;
+}
+.tooltipContent {
+  background-color: #4b5563;
+  padding: 8px;
+  border-radius: 6px;
+  display: none;
+  margin-left: 30rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+}
+
+.tooltipText {
+  color: white;
+  white-space: nowrap;
+}
+
+.tooltipArrow {
+  background-color: inherit;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.invalid .userInput {
+  border: 1px solid red;
+  border: 2px solid rgb(236, 74, 98);
+  box-shadow: 0px 0px 0px 8px rgba(236, 74, 74, 0.2);
+}
+.userErrorText {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
